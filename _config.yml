@@ -19,7 +19,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Mapping the capacity and current occupancy of City of Toronto emergency
   shelters.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: https://patcon.github.io/toronto-shelter-map
+url: https://civictechto.github.io/toronto-shelter-map/
 
 # Build settings
 markdown: kramdown
