@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
+    "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +19,8 @@
   },
   "homepage": "https://github.com/andrewcarreiro/toronto-shelter-map#readme",
   "dependencies": {
+    "@types/esri-leaflet": "^2.1.2",
+    "axios": "^0.17.1",
     "chart.js": "^2.7.1",
     "eslint": "^4.15.0",
     "esri-leaflet": "^2.1.2",
