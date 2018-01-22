@@ -1,10 +1,10 @@
 const debug = process.env.NODE_ENV !== 'production';
-const webpack = require('webpack');
+// const webpack = require('webpack');
 
 module.exports = {
   context: __dirname,
   devtool: debug ? 'inline-sourcemap' : null,
-  entry: './src/index.js',
+  entry: './src/index.jsx',
   watchOptions: {
     ignored: /node_modules/,
   },
@@ -12,11 +12,14 @@ module.exports = {
     path: `${__dirname}/dist`,
     filename: 'scripts.min.js',
   },
-  plugins: debug ? [] : [
-    new webpack.optimize.DedupePlugin(),
-    new webpack.optimize.OccurenceOrderPlugin(),
-    new webpack.optimize.UglifyJsPlugin({ mangle: false, sourcemap: false }),
-  ],
+  resolve: {
+    extensions: ['.js', '.jsx'],
+  },
+  // plugins: debug ? [] : [
+  //   new webpack.optimize.DedupePlugin(),
+  //   new webpack.optimize.OccurenceOrderPlugin(),
+  //   new webpack.optimize.UglifyJsPlugin({ mangle: false, sourcemap: false }),
+  // ],
   module: {
     rules: [
       {
@@ -45,6 +48,16 @@ module.exports = {
             },
           },
         ],
+      },
+      {
+        test: /\.jsx?$/,
+        exclude: /(node_modules)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/env', '@babel/react'],
+          },
+        },
       },
     ],
   },
