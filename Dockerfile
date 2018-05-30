@@ -10,8 +10,4 @@ COPY Gemfile /app/Gemfile
 COPY Gemfile.lock /app/Gemfile.lock
 WORKDIR /app
 RUN bundle install
-COPY . /app
-
-# EXPOSE 3000/tcp
-
-# ENTRYPOINT [ "rails", "s", "-p", "3000", "-b", "0.0.0.0" ]
+COPY . /app/

@@ -1,4 +1,10 @@
 #!/usr/bin/env ruby
+
+# wait for db
+# TODO: need to remove this for production :\
+wait_for_mysql = "mysql --host=db --user=root --password=example -e 'SHOW tables from development'"
+sleep 2 until system(wait_for_mysql)
+
 begin
   load File.expand_path('../spring', __FILE__)
 rescue LoadError => e
