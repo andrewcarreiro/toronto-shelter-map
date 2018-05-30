@@ -1,47 +1,24 @@
-# Toronto Shelter Map
+# README
 
-Mapping the capacity and current occupancy of City of Toronto emergency shelters.
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-This app is currently populated with **dummy data**.
+Things you may want to cover:
 
-This is a **citizen-led** project.
+* Ruby version
 
-## Technologies Used
+* System dependencies
 
-* [**Jekyll.**][jekyll] A static HTML website generator.
-* [**GitHub Pages.**][gh-pages] A Jekyll website-hosting service provided by GitHub.
-* [**Leaflet.**][leaflet] A JavaScript library for mobile-friendly interactive maps.
+* Configuration
 
-## :computer: Local Development
+* Database creation
 
-### Requirements
+* Database initialization
 
-* Ruby 2.3+
-* `rbenv` (optional)
+* How to run the test suite
 
-### Setup
+* Services (job queues, cache servers, search engines, etc.)
 
-You'll first need to ensure you are using a compatible version of Ruby.
-We recommend managing Ruby versions with `rbenv`. (Installing and
-setting ruby versions is out of scope of these instructions.)
+* Deployment instructions
 
-```
-ruby --version
->>> ruby 2.3.0p0 (2015-12-25 revision 53290) [x86_64-linux]
-git clone https://github.com/patcon/toronto-shelter-map
-bundle install
-bundle exec jekyll serve
-```
-
-## :muscle: Contributing
-
-Please make sure to read the [Contributing Guide](CONTRIBUTING.md) before making a pull request.
-
-## :copyright: License
-
-[MIT](http://opensource.org/licenses/MIT)
-
-<!-- Links -->
-   [leaflet]: http://leafletjs.com/
-   [gh-pages]: https://help.github.com/articles/what-is-github-pages/
-   [jekyll]: https://jekyllrb.com/docs/home/
+* ...
